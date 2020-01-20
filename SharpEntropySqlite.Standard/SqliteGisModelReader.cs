@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
+using SharpEntropy;
+using SharpEntropy.IO;
 
-namespace SharpEntropy.IO
+namespace SharpEntropySqlite
 {
 	/// <summary>
 	/// Summary description for SqliteGisModelReader.

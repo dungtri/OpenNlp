@@ -33,15 +33,12 @@
 //License along with this program; if not, write to the Free Software
 //Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-using System;
 using System.Collections.Generic;
-using OpenNLP.Tools.Coreference;
+using System.Text;
 using OpenNLP.Tools.Coreference.Mention;
 using OpenNLP.Tools.Parser;
 
-using System.Text;
-
-namespace OpenNLP.Tools.Lang.English
+namespace OpenNLP.Tools.Coreference
 {
 	/// <summary>
     /// This class perform coreference for treebank style parses.  
@@ -104,7 +101,7 @@ namespace OpenNLP.Tools.Lang.English
         public string GetCoreferenceParse(Parse[] parsedSentences)
 		{
 			int sentenceNumber = 0;
-            var document = new List<Mention>();
+            var document = new List<Mention.Mention>();
             var parses = new List<Parse>();
             var output = new StringBuilder();
 
@@ -121,10 +118,10 @@ namespace OpenNLP.Tools.Lang.English
 				else
 				{
 					parses.Add(lineParse);
-					Mention[] extents = MentionFinder.GetMentions(new DefaultParse(lineParse, sentenceNumber));
+					Mention.Mention[] extents = MentionFinder.GetMentions(new DefaultParse(lineParse, sentenceNumber));
 					
                     //construct new parses for mentions which don't have constituents.
-					foreach (Mention mention in extents)
+					foreach (Mention.Mention mention in extents)
 					{
 					    if (mention.Parse == null)
 					    {

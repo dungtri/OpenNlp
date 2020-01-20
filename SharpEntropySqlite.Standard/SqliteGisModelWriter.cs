@@ -1,9 +1,11 @@
 using System;
+using System.Data;
 using System.Data.SQLite;
 using System.IO;
-using System.Data;
+using SharpEntropy;
+using SharpEntropy.IO;
 
-namespace SharpEntropy.IO
+namespace SharpEntropySqlite
 {
 	/// <summary>
 	/// Summary description for SqliteGisModelWriter.
