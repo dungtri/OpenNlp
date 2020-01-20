@@ -115,12 +115,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpEntropy.csproj">
-      <Project>{BF0BF8B0-1894-4EDF-BF51-F370B063797E}</Project>
-      <Name>SharpEntropy</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="x86\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

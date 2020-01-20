@@ -76,6 +76,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\OpenNLP\OpenNLP.csproj">
+      <Project>{b70185df-81fd-4417-914f-7c90e65e7d9f}</Project>
+      <Name>OpenNLP</Name>
+    </ProjectReference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -96,10 +100,6 @@
       <Name>Lithium</Name>
       <Project>{A4FA73C1-2527-4EF9-ACFE-3072386100DC}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
-    </ProjectReference>
-    <ProjectReference Include="..\OpenNLP\OpenNLP.csproj">
-      <Project>{B70185DF-81FD-4417-914F-7C90E65E7D9F}</Project>
-      <Name>OpenNLP</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
