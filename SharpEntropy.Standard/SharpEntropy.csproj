@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>SharpEntropy</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="AbstractDataIndexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasicContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BasicEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ComparableEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GisModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GisTrainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IMaximumEntropyModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\BinaryGisModelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\BinaryGisModelWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\GisModelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\GisModelWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\IGisModelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\JavaBinaryGisModelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\JavaBinaryGisModelWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\PlainTextGisModelReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IO\PlainTextGisModelWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ITrainingDataIndexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ITrainingDataReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ITrainingEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OnePassDataIndexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PatternedPredicate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PlainTextByLineDataReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TrainingEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TwoPassDataIndexer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

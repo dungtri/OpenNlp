@@ -1,0 +1,196 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>OpenNLP</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Tools\Parser\Common\" />
+    <Folder Include="Tools\Parser\LexParser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Caching" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharpEntropy.Standard\SharpEntropy.csproj" />
+    <ProjectReference Include="..\SharpWordNet.Standard\SharpWordNet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Tools\Chunker\ChunkerEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Chunker\DefaultChunkerContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Chunker\EnglishTreebankChunker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Chunker\IChunker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Chunker\IChunkerContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Chunker\MaximumEntropyChunker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\DefaultNameContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\EnglishNameFinder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\INameContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\INameFinder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\MaximumEntropyNameFinder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\NameFind\NameFinderEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\BuildContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\CheckContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\ChunkContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\EnglishHeadRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\EnglishTreebankParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\IHeadRules.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\IParserChunker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\IParserTagger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\MaximumEntropyParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\Parse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Parser\ParserEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\DefaultPosContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\EnglishMaximumEntropyPosTagger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\IPosContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\IPosTagger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\MaximumEntropyPosTagger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\PosEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\PosLookupList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\PosTagger\PosLookupListWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\DefaultEndOfSentenceScanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\EnglishMaximumEntropySentenceDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\IEndOfSentenceScanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\ISentenceDectector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\MaximumEntropySentenceDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\SentenceDetectionContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\SentenceDetectionEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\SentenceDetect\SentenceDetectionEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\EnglishMaximumEntropyTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\ITokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\MaximumEntropyTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\TokenContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\TokenEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Tokenize\TokenSpanEventReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Trees\PennTreebankLanguagePack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\BeamSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\HashSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\IBeamSearchContextGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\IHeap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\ListHeap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\Sequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\Set.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\SortedSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\Span.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\StringTokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Tools\Util\TreeSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
