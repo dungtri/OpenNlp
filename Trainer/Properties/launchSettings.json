@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Trainer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "OPENNLP_TRAINING_DIRECTORY": "C:\\Test"
+      }
+    }
+  }
+}
